@@ -1,8 +1,6 @@
 HC1T5 - Tâche 5 : Paresse en Haskell
-En Haskell, nous pouvons créer une liste infinie de nombres et extraire les `n` premiers éléments en utilisant des fonctions standard et la nature paresseuse (lazy evaluation) du langage. Voici une solution qui définit une fonction `infiniteNumbers` pour générer une liste infinie de nombres entiers (à partir de 1) et une fonction pour extraire les `n` premiers éléments.
 
 ### Code
-```haskell
 ```haskell
 -- Génère une liste infinie de nombres entiers à partir de 1
 infiniteNumbers :: [Int]
@@ -17,7 +15,6 @@ main :: IO ()
 main = do
     print (takeFirstN 5)
     print (takeFirstN 10)
-```
 ```
 
 ### Explication ligne par ligne
