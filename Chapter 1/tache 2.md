@@ -1,6 +1,5 @@
 HC1T2 - Tâche 2 : Exemple de fonction pure
 
-Voici une fonction Haskell pure pour calculer l'aire d'un cercle à partir de son rayon :
 
 ```haskell
 circleArea :: Double -> Double
