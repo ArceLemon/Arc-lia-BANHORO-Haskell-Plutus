@@ -1,4 +1,4 @@
-Voici une fonction Haskell pure pour convertir des degrés Fahrenheit en Celsius :
+HC1T7 - Tâche 7 : Conversion Fahrenheit/Celsius
 
 ```haskell
 -- Convertit des degrés Fahrenheit en Celsius
