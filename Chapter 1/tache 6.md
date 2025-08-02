@@ -1,6 +1,5 @@
 HC1T6 - Tâche 6 : Utilisation de signatures de type
 
-Voici une fonction Haskell pure pour additionner deux entiers :
 
 ```haskell
 -- Additionne deux entiers
@@ -53,12 +52,5 @@ main = print (addNumbers 3 5)
 
 ### Notes :
 - **Pureté** : `addNumbers` est une fonction pure, car elle dépend uniquement de ses arguments `x` et `y` et produit toujours le même résultat pour les mêmes entrées, sans effets secondaires.
-- **Test** : Vous pouvez tester d’autres valeurs en modifiant les arguments dans `main`, par exemple `print (addNumbers 10 20)` pour obtenir `30`.
-- **GHCi** : Pour tester dans GHCi :
-  ```haskell
-  :l AddNumbers.hs
-  main
-  ```
-  Ou directement : `addNumbers 3 5` pour obtenir `8`.
 
-Si vous avez besoin d’une modification (par exemple, utiliser `Double` au lieu de `Int` ou ajouter plus de tests), faites-le-moi savoir !
+
