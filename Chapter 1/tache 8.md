@@ -1,3 +1,4 @@
+HC1T8 - Tâche 8 : Fonctions d’ordre supérieur
 
 ```haskell
 -- Applique une fonction deux fois à une valeur d'entrée
