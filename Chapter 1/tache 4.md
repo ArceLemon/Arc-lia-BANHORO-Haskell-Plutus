@@ -30,37 +30,8 @@ main = do
     print (topThree (sortByScore [("Alice", 100), ("Bob", 50), ("Charlie", 75), ("David", 90)]))
 ```
 
-Je vais expliquer ligne par ligne le code Haskell corrigé que j'ai fourni, en détaillant chaque partie pour clarifier son fonctionnement. Voici le code pour référence, suivi de l'explication :
 
-```haskell
-```haskell
-import Data.List (sortBy)
-import Data.Ord (comparing)
 
--- Extrait les noms des joueurs d'une liste de tuples (nom, score)
-extractPlayers :: [(String, Int)] -> [String]
-extractPlayers players = map fst players
-
--- Trie la liste des joueurs par score décroissant
-sortByScore :: [(String, Int)] -> [(String, Int)]
-sortByScore players = sortBy (\(_, s1) (_, s2) -> compare s2 s1) players
-
--- Retourne les trois meilleurs joueurs
-topThree :: [(String, Int)] -> [(String, Int)]
-topThree players = take 3 players
-
--- Compose les fonctions pour obtenir les noms des trois meilleurs joueurs
-getTopThreePlayers :: [(String, Int)] -> [String]
-getTopThreePlayers = extractPlayers . topThree . sortByScore
-
--- Fonction principale pour tester les trois fonctions séparément
-main :: IO ()
-main = do
-    print (extractPlayers [("Alice", 100), ("Bob", 50), ("Charlie", 75), ("David", 90)])
-    print (sortByScore [("Alice", 100), ("Bob", 50), ("Charlie", 75), ("David", 90)])
-    print (topThree (sortByScore [("Alice", 100), ("Bob", 50), ("Charlie", 75), ("David", 90)]))
-```
-```
 
 ### Explication ligne par ligne :
 
@@ -194,14 +165,3 @@ Lors de l’exécution, le programme affiche :
 [("Alice",100),("David",90),("Charlie",75)]
 ```
 
-### Notes :
-- **Pureté** : Les fonctions `extractPlayers`, `sortByScore`, `topThree`, et `getTopThreePlayers` sont pures (elles dépendent uniquement de leurs entrées).
-- **Problème initial** : Si le code "ne marche toujours pas", il est probable que le problème vienne de l’environnement (GHC non installé, modules manquants, ou erreur de compilation). Veuillez partager le message d’erreur exact ou décrire le problème (par exemple, "erreur de compilation", "résultat incorrect").
-- **Test** : Ce code a été simplifié pour minimiser les dépendances (seuls `Data.List` et `Data.Ord` sont requis) et utilise une comparaison explicite dans `sortByScore` pour éviter des erreurs liées à `` `on` `` ou `negate`.
-
-Si vous rencontrez toujours un problème, merci de fournir :
-- Le message d’erreur exact (si compilation ou exécution).
-- L’environnement utilisé (GHCi, Stack, Cabal, etc.).
-- Le résultat obtenu (si différent de celui attendu).
-
-Cela me permettra de diagnostiquer précisément le problème.
