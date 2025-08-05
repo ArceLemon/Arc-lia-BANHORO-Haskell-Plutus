@@ -22,14 +22,13 @@ HC2T1 - Tâche 1 : Vérification des types dans GHCi
    - Raison : Les termes `Vrai` et `faux` ne sont pas des mots-clés ou des valeurs valides en Haskell. En Haskell, les valeurs booléennes sont écrites `True` et `False` (avec une majuscule initiale). Cette expression pourrait provoquer une erreur de syntaxe ou ne pas être reconnue.
 
 ### Vérification dans GHCi :
-Pour vérifier ces types, suivez ces étapes dans un terminal après avoir installé GHC :
+
 
 1. **Ouvrir GHCi** :
-   - Ouvrez un terminal et tapez :
+   - Ouvrez un terminal et on tape :
      ```bash
      ghci
      ```
-   - Vous devriez voir un invite comme `Prelude>`.
 
 2. **Vérifier les types avec `:type` ou `:t`** :
    - Utilisation de la commande `:t` (ou `:type`) suivie de l'expression pour afficher son type.
