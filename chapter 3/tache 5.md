@@ -16,7 +16,7 @@ main = do
     print (triangleType 6 7 8)
 ```
 
-### Explications très détaillées ligne par ligne :
+### Explications ligne par ligne :
 
 1. `-- Classifie le type d'un triangle en fonction de ses côtés`  
    - Commentaire expliquant que `triangleType` détermine si un triangle est équilatéral, isocèle ou scalène en analysant les longueurs des côtés. Ignoré par le compilateur, il sert de documentation.
