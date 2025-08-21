@@ -1,3 +1,5 @@
+HC3T3 - Tâche 3 : Convertir une couleur RGB en chaîne hexadécimale avec let
+
 ```haskell
 -- Convertit une couleur RGB en une chaîne hexadécimale simple
 rgbToHex :: (Int, Int, Int) -> String
