@@ -13,7 +13,7 @@ main = do
     print (triangleArea 7 8 9)
 ```
 
-### Explications très détaillées ligne par ligne :
+### Explications ligne par ligne :
 
 1. `-- Calcule l'aire d'un triangle à partir de ses trois côtés en utilisant la formule de Héron`  
    - Commentaire en Haskell (débutant par `--`) qui explique le but de la fonction suivante (`triangleArea`). Il indique que la fonction calcule l'aire d'un triangle en utilisant la formule de Héron, basée sur les longueurs des trois côtés. Ce commentaire est ignoré par le compilateur GHC mais est essentiel pour la documentation et la compréhension du code.
